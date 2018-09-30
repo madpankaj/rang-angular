@@ -11,6 +11,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { AppRouting } from './app.routing';
 import { InstagramComponent } from './components/instagram/instagram.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { InstagramComponent } from './components/instagram/instagram.component';
   ],
   imports: [
     BrowserModule,
-    AppRouting
+    AppRouting,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
