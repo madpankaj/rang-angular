@@ -1,14 +1,15 @@
-<section id="home" class="video-hero" style="height: 800px; background-image: url(../../../assets/images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
-  <div class="overlay"></div>
-    <a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Yz5-mrDBbxU',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a> 
+<section id="home" class="video-hero" 
+ data-section="home" [ngStyle]="{'background-image': getBanner()}">
+  
+    
     <div class="display-t text-center">
       <div class="display-tc">
         <div class="container">
           <div class="col-md-10 col-md-offset-1">
             <div class="animate-box">
-              <h1 class="holder"><span>Fashion Photoshoot</span></h1>
-              <h2>Classy Rebel Fashion Photoshoot</h2>
-              <p>27.03.2018</p>
+              
+              <h1 class="holder"><span>{{homeContent.Text1}} </span></h1>
+              <h2>{{homeContent.Text2}}</h2>
               <p><a routerLink="gallery" class="btn btn-primary btn-custom">View Gallery</a></p>
             </div>
           </div>
@@ -17,54 +18,14 @@
     </div>
   </section>
 
-  <div id="colorlib-services">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 text-center animate-box">
-          <div class="services">
-            <span class="icon">
-              <i class="icon-camera4"></i>
-            </span>
-            <div class="desc">
-              <h3>Photography</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 text-center animate-box">
-          <div class="services">
-            <span class="icon">
-              <i class="icon-image2"></i>
-            </span>
-            <div class="desc">
-              <h3>Image Processing</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 text-center animate-box">
-          <div class="services">
-            <span class="icon">
-              <i class="icon-video3"></i>
-            </span>
-            <div class="desc">
-              <h3>Videography</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="colorlib-about-flex">
-    <div class="col-half about-flex-img animate-box" style="background-image: url(../../../assets/images/about.jpg);"></div>
+    <div class="col-half about-flex-img animate-box" [ngStyle]="{'background-image': getAboutImage()}"></div>
     <div class="col-half">
       <div class="row">
         <div class="col-md-12 col-md-pull-2 animate-box">
           <div class="about-desc">
-            <h2>We Are Imahe a Photography Studio</h2>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-            <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+            <h2>{{homeContent.AboutText}}</h2>
+            <div [innerHtml]="homeContent.AboutDescription"></div>
           </div>
         </div>
       </div>
@@ -80,62 +41,16 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-3 no-gutters">
-          <a href="../../../assets/images/gallery-1.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-1.jpg" alt="">
+        <div class="col-md-3 no-gutters" *ngFor="let Gal of Gallery" >
+          <a *ngFor="let galImg of Gal" [href]="galImg.path" class="gallery-img image-popup-link animate-box"><img class="img-responsive" [src]="galImg.path" [alt]="galImg.name">
             <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Fashion</span></p>
+              <h2>{{galImg.text}}</h2>
+             
             </div>
           </a>
-          <a href="../../../assets/images/gallery-2.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-2.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Jacket</span> <span>Woman</span></p>
-            </div>
-          </a>
+   
         </div>
-        <div class="col-md-3 no-gutters">
-          <a href="../../../assets/images/gallery-3.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-3.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Jacket</span> <span>Male</span></p>
-            </div>
-          </a>
-          <a href="../../../assets/images/gallery-4.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-4.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Fashion</span></p>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-3 no-gutters">
-          <a href="../../../assets/images/gallery-5.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-5.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Fashion</span></p>
-            </div>
-          </a>
-          <a href="../../../assets/images/gallery-6.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-6.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Fashion</span></p>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-3 no-gutters">
-          <a href="../../../assets/images/gallery-7.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-7.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Fashion</span></p>
-            </div>
-          </a>
-          <a href="../../../assets/images/gallery-8.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-8.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Fashion</span></p>
-            </div>
-          </a>
-        </div>
+       
       </div>
     </div>
   </div>

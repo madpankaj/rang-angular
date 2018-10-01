@@ -9,13 +9,32 @@ import { Response } from '@angular/http';
 })
 export class HomeComponent implements OnInit {
 
-  constructor( private dataService: DataService) { }
-  homeContent:any;
+  constructor( private dataService: DataService) {
+    
+   }
+  homeContent = {
+    "Text1":"Heading",
+    "Text2":"Custom clothing By Rang",
+    "BackgroundImage":"",
+    "AboutImage":"",
+    "AboutText":""
+  }
+
+  Gallery = [];
+
+  getBanner(){
+    return "url("+this.homeContent.BackgroundImage+")";
+  }
+
+  getAboutImage(){
+    return "url("+this.homeContent.AboutImage+")";
+  }
+
   ngOnInit() {
     this.dataService.getHomeContent()
     .subscribe((res:Response)=>{
       this.homeContent = res.json().home
-      console.log(this.homeContent);
+      this.Gallery = res.json().gallery.galleryImages
     })
   }
 
