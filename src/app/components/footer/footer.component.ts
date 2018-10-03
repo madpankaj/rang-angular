@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../data.service';
+import { Response } from '@angular/http';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
-
+  constructor( private dataService: DataService) { }
+  footerContent:any;
   ngOnInit() {
+    this.dataService.getHomeContent()
+    .subscribe((res:Response)=>{
+      this.footerContent = res.json().footer
+    })
   }
 
 }

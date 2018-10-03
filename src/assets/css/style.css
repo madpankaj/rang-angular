@@ -90,6 +90,8 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative; }
 
 .colorlib-nav {
+  background: #4d1e1e;
+  opacity: .7;
   margin: 0;
   position: absolute;
   top: 0;
@@ -279,7 +281,7 @@ h1, h2, h3, h4, h5, h6, figure {
   z-index: 0; }
   @media screen and (max-width: 768px) {
     .video-hero {
-      heifght: inherit;
+      height:  inherit;
       padding: 3em 0; } }
   .video-hero .overlay {
     position: absolute;
@@ -290,18 +292,31 @@ h1, h2, h3, h4, h5, h6, figure {
     opacity: 0.5;
     background: #000;
     z-index: -1; }
+
+    .video-hero.home .display-t {
+      display: table;
+      height: 800px;
+      width: 100%;
+      position: relative;
+      z-index: 2; }
+      @media screen and (max-width: 768px) {
+        .video-hero .display-t {
+          height: 600px; } }
   .video-hero .display-t {
     display: table;
-    height: 800px;
+    height: 400px;
     width: 100%;
     position: relative;
     z-index: 2; }
     @media screen and (max-width: 768px) {
       .video-hero .display-t {
         height: 600px; } }
-  .video-hero .display-tc {
+  .video-hero.home .display-tc {
     display: table-cell;
     vertical-align: middle; }
+    .video-hero .display-tc {
+      display: table-cell;
+      vertical-align: bottom; }
     .video-hero .display-tc .holder {
       color: #fff;
       font-family: "Josefin Sans", Arial, sans-serif;
@@ -336,8 +351,14 @@ h1, h2, h3, h4, h5, h6, figure {
     .video-hero .display-tc h2 {
       color: #fff;
       font-size: 80px;
-      margin-bottom: 20px;
+      margin-bottom: 80px;
       text-transform: uppercase; }
+    
+      .video-hero.home .display-tc h2 {
+        color: #fff;
+        font-size: 80px;
+        margin-bottom: 20px;
+        text-transform: uppercase; }
       .video-hero .display-tc h2 strong {
         font-weight: 700; }
       @media screen and (max-width: 768px) {
@@ -865,7 +886,7 @@ input[type="text"] {
           position: absolute;
           right: 0px;
           font-family: 'icomoon';
-          speak: none;
+         
           font-style: normal;
           font-weight: normal;
           font-variant: normal;
