@@ -32,4 +32,8 @@ export class AboutComponent implements OnInit {
   getAboutImage(){
     return "url("+this.aboutContent.AboutImage+")";
   }
+  getDesignerImage(){
+   // return "url("+this.aboutContent.DesginerImage+")";
+    return "url("+this.aboutContent.DesginerImage+")";
+  }
 }

@@ -5,7 +5,7 @@
         <div class="container">
           <div class="col-md-10 col-md-offset-1">
             <div class="animate-box">
-              <h2>Gallery</h2>
+              <h2>Portfolio</h2>
               
             </div>
           </div>
@@ -17,90 +17,17 @@
   <div class="colorlib-gallery">
     <div class="container">
       <div class="row row-pb-md">
-        <div class="col-md-3 no-gutters">
-          <a href="../../../assets/images/gallery-1.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-1.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Fashion</span></p>
+          <div class="col-md-3 no-gutters" *ngFor="let Gal of galleryContent.galleryImages" >
+              <a *ngFor="let galImg of Gal" [href]="galImg.path" class="gallery-img image-popup-link animate-box"><img class="img-responsive" [src]="galImg.path" [alt]="galImg.name">
+                <div class="desc text-center">
+                  <h2>{{galImg.text}}</h2>
+                  <p class="category"><span>{{galImg.description}}</span> </p>
+                 
+                </div>
+              </a>
+       
             </div>
-          </a>
-          <a href="../../../assets/images/gallery-2.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-2.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Jacket</span> <span>Woman</span></p>
-            </div>
-          </a>
-          <a href="../../../assets/images/gallery-9.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-9.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Jacket</span> <span>Woman</span></p>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3 no-gutters">
-          <a href="../../../assets/images/gallery-3.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-3.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Jacket</span> <span>Male</span></p>
-            </div>
-          </a>
-          <a href="../../../assets/images/gallery-4.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-4.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Fashion</span></p>
-            </div>
-          </a>
-          <a href="../../../assets/images/gallery-10.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-10.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Jacket</span> <span>Woman</span></p>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3 no-gutters">
-          <a href="../../../assets/images/gallery-5.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-5.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Fashion</span></p>
-            </div>
-          </a>
-          <a href="../../../assets/images/gallery-6.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-6.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Fashion</span></p>
-            </div>
-          </a>
-          <a href="../../../assets/images/gallery-11.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-11.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Jacket</span> <span>Woman</span></p>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-3 no-gutters">
-          <a href="../../../assets/images/gallery-7.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-7.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Fashion</span></p>
-            </div>
-          </a>
-          <a href="../../../assets/images/gallery-8.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-8.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Fashion</span></p>
-            </div>
-          </a>
-          <a href="../../../assets/images/gallery-12.jpg" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="../../../assets/images/gallery-12.jpg" alt="">
-            <div class="desc text-center">
-              <h2>Fashion be like</h2>
-              <p class="category"><span>Jacket</span> <span>Woman</span></p>
-            </div>
-          </a>
-        </div>
-      </div>
+       
      
     </div>
   </div>

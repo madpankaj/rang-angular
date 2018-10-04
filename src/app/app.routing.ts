@@ -8,8 +8,8 @@ import { NgModule } from "@angular/core";
 const appRoutes:Routes = [
     { path:'',component:HomeComponent},
     { path:'about-us', component:AboutComponent},
-    { path:'contact-us',component:ContactComponent},
-    { path:'gallery', component:GalleryComponent}
+    { path:'connect',component:ContactComponent},
+    { path:'portfolio', component:GalleryComponent}
 ];
 
 @NgModule({

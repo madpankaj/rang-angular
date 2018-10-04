@@ -90,8 +90,8 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative; }
 
 .colorlib-nav {
-  background: #4d1e1e;
-  opacity: .7;
+  background: #0d0101;
+  opacity: .5;
   margin: 0;
   position: absolute;
   top: 0;
@@ -356,7 +356,7 @@ h1, h2, h3, h4, h5, h6, figure {
     
       .video-hero.home .display-tc h2 {
         color: #fff;
-        font-size: 80px;
+        font-size: 72px;
         margin-bottom: 20px;
         text-transform: uppercase; }
       .video-hero .display-tc h2 strong {
