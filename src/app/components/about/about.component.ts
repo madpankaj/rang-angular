@@ -21,7 +21,7 @@ export class AboutComponent implements OnInit {
     this.dataService.getHomeContent()
     .subscribe((res:Response)=>{
       this.aboutContent = res.json().about
-      console.log(this.aboutContent);
+     // console.log(this.aboutContent);
     })
   }
 
@@ -32,8 +32,10 @@ export class AboutComponent implements OnInit {
   getAboutImage(){
     return "url("+this.aboutContent.AboutImage+")";
   }
+
   getDesignerImage(){
-   // return "url("+this.aboutContent.DesginerImage+")";
-    return "url("+this.aboutContent.DesginerImage+")";
+    return "url("+this.aboutContent.desginerImage+")";
   }
+  
+
 }

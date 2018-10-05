@@ -11,6 +11,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { AppRouting } from './app.routing';
 import { InstagramComponent } from './components/instagram/instagram.component';
 import { HttpModule } from '@angular/http';
+import { ReactiveFormsModule  } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpModule } from '@angular/http';
   imports: [
     BrowserModule,
     AppRouting,
-    HttpModule
+    HttpModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

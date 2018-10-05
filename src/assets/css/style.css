@@ -1191,3 +1191,7 @@ input[type="text"] {
   width: 150px;
 }
 
+.left .otherdesc {
+   left: 124px;
+    z-index: 99;
+}

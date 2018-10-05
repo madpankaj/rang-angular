@@ -38,7 +38,7 @@ export class GalleryComponent implements OnInit {
     this.dataService.getHomeContent()
     .subscribe((res:Response)=>{
       this.galleryContent = res.json().gallery;
-      console.log(this.galleryContent)
+     // console.log(this.galleryContent)
     })
   }
 
