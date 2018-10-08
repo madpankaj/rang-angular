@@ -1,4 +1,4 @@
-<section id="home" class="video-hero"[ngStyle]="{'background-image': getImage()}" data-section="home">
+<section id="home" class="video-hero home" [ngStyle]="{'background-image': getImage()}" data-section="home">
   <div class="overlay"></div>
     <div class="display-t text-center">
       <div class="display-tc">
@@ -26,10 +26,10 @@
                 <p><span><i class="icon-location-2"></i></span> {{contactDetails.address}}</p>
               </div>
               <div class="con-info">
-                <p><span><i class="icon-phone3"></i></span> <a href="tel://{{contactDetails.phoneNo}}">+ {{contactDetails.phoneNo}}</a></p>
+                <p><span><i class="icon-phone3"></i></span> <a href="tel://{{contactDetails.phoneNo}}"> +{{contactDetails.phoneNo}}</a></p>
               </div>
               <div class="con-info">
-                <p><span><i class="icon-paperplane"></i></span> <a href="mailto:{{contactDetails.address.email}}">{{contactDetails.email}}</a></p>
+                <p><span><i class="icon-paperplane"></i></span> <a href="mailto:{{contactDetails.email}}"> {{contactDetails.email}}</a></p>
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@
           <div class="row form-group">
             <div class="col-md-6">
               <!-- <label for="email">Email</label> -->
-              <input type="text" id="email" class="form-control" formControlName="email" placeholder="Your email address">
+              <input type="text" id="email" class="form-control" formControlName="useremail" placeholder="Your email address">
             </div>
             <div class="col-md-6">
               <!-- <label for="email">Phone no</label> -->

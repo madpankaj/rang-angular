@@ -1,4 +1,4 @@
-<section id="home" class="video-hero" 
+<section id="home" class="video-hero home" 
 [ngStyle]="{'background-image': getBanner()}"
  data-section="home">
   <div class="overlay"></div>
@@ -19,7 +19,7 @@
     <div class="col-half about-flex-img animate-box" [ngStyle]="{'background-image': getAboutImage(),'background-position': 'inherit'}"></div>
     <div class="col-half">
       <div class="row">
-        <div class="col-md-12 col-md-pull-2 animate-box">
+        <div class="col-md-12 aboutdes animate-box">
           <div class="about-desc">
             <h2>{{aboutContent.AboutText}}</h2>
             <div [innerHtml]="aboutContent.AboutDescription"></div>

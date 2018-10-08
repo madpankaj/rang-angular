@@ -1,4 +1,4 @@
-<section id="home" class="video-hero" style="background-image: url(../../../assets/images/cover_img_2.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
+<section id="home" class="video-hero home" style="background-image: url(../../../assets/images/photography-1850469_1920.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
   <div class="overlay"></div>
     <div class="display-t text-center">
       <div class="display-tc">
@@ -6,6 +6,7 @@
           <div class="col-md-10 col-md-offset-1">
             <div class="animate-box">
               <h2>Portfolio</h2>
+              <p>“Dress how you want to be Addressed”</p>
               
             </div>
           </div>
@@ -18,7 +19,9 @@
     <div class="container">
       <div class="row row-pb-md">
           <div class="col-md-3 no-gutters" *ngFor="let Gal of galleryContent.galleryImages" >
-              <a *ngFor="let galImg of Gal" [href]="galImg.path" class="gallery-img image-popup-link animate-box"><img class="img-responsive" [src]="galImg.path" [alt]="galImg.name">
+              <a *ngFor="let galImg of Gal" 
+              href="{{galImg.path}}" 
+              class="gallery-img image-popup-link animate-box fadeInUp animated-fast"><img class="img-responsive" [src]="galImg.path" [alt]="galImg.name">
                 <div class="desc text-center">
                   <h2>{{galImg.text}}</h2>
                   <p class="category"><span>{{galImg.description}}</span> </p>
