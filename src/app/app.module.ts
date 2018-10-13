@@ -12,6 +12,10 @@ import { AppRouting } from './app.routing';
 import { InstagramComponent } from './components/instagram/instagram.component';
 import { HttpModule } from '@angular/http';
 import { ReactiveFormsModule  } from "@angular/forms";
+import 'hammerjs';
+import 'mousetrap';
+import { ModalGalleryModule } from 'angular-modal-gallery';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +26,15 @@ import { ReactiveFormsModule  } from "@angular/forms";
     ContactComponent,
     AboutComponent,
     GalleryComponent,
-    InstagramComponent
+    InstagramComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
     AppRouting,
     HttpModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ModalGalleryModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

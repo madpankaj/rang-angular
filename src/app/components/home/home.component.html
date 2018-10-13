@@ -41,17 +41,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-3 no-gutters" *ngFor="let Gal of Gallery" >
-          <a *ngFor="let galImg of Gal" [href]="galImg.path" 
-          class="gallery-img image-popup-link animate-box fadeInUp animated-fast"><img class="img-responsive" [src]="galImg.path" [alt]="galImg.name">
-            <div class="desc text-center">
-              <h2>{{galImg.text}}</h2>
-              <p class="category"><span>{{galImg.description}}</span> </p>
-             
-            </div>
-          </a>
-   
-        </div>
+        <app-portfolio></app-portfolio>
+       
        
       </div>
     </div>

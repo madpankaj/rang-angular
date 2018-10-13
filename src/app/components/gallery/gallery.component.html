@@ -18,19 +18,6 @@
   <div class="colorlib-gallery">
     <div class="container">
       <div class="row row-pb-md">
-          <div class="col-md-3 no-gutters" *ngFor="let Gal of galleryContent.galleryImages" >
-              <a *ngFor="let galImg of Gal" 
-              href="{{galImg.path}}" 
-              class="gallery-img image-popup-link animate-box fadeInUp animated-fast"><img class="img-responsive" [src]="galImg.path" [alt]="galImg.name">
-                <div class="desc text-center">
-                  <h2>{{galImg.text}}</h2>
-                  <p class="category"><span>{{galImg.description}}</span> </p>
-                 
-                </div>
-              </a>
-       
-            </div>
-       
-     
-    </div>
+          <app-portfolio></app-portfolio>
+     </div>
   </div>

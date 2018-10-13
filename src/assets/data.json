@@ -5,7 +5,7 @@
         "BackgroundImage":"assets/images/Menqn1-min.jpg",
         "AboutImage":"assets/images/P9169765.jpg",
         "AboutText":"About Rang",
-        "AboutDescription":"<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p><p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>",
+        "AboutDescription":"<p>Rang is all about giving silhouettes of your imagination a colorful illustrated shape. The palate of rang holds colors beyond your thoughts. From creations to the reinventions we believe in doing both. It’s either Indian or western, ethnic or fusion we’ve done all. A line of collection which accentuate the personality of all you lovely women. </p><p>Most importantly we pride ourself being one of the few design studios who designs for kids. Designing for all those adorable little girls gives us sense of pleasure and happiness. When these little angels adorn our dresses, these dresses become more beautiful and attain their eventual purpose</p>",
         "galleryText":"To boost your confidence, dress well. Choose cloths that reflects who you are and the image you want to project, even if that means spending more time getting ready in the morning. Let us help you in that. <br> “In order to be irreplaceable one must always be different.” —Coco Chanel"
         
     },
@@ -25,7 +25,7 @@
         "Text2":"",
         "BackgroundImage":"",
         "galleryImages":[
-            [
+          
               {
                 "name": "Image 1",
                 "path": "assets/images/gallery-1-min.jpg",
@@ -37,9 +37,8 @@
                 "path": "assets/images/gallery-2-min.jpg",
                 "text": "Gown",
                 "description": "A net velvet fusion gown"
-              }
-            ],
-            [
+              },
+            
               {
                 "name": "Image 1",
                 "path": "assets/images/gallery-3-min.jpg",
@@ -51,9 +50,8 @@
                 "path": "assets/images/gallery-4-min.jpg",
                 "text": "Patiyala",
                 "description": "A georgette patiyala suit with net dupatta "
-              }
-            ],
-            [
+              },
+            
               {
                 "name": "Image 1",
                 "path": "assets/images/gallery-5-min.jpg",
@@ -65,9 +63,8 @@
                 "path": "assets/images/gallery-6-min.jpg",
                 "text": "Lehanga",
                 "description": "A fusion navratri theme lehanga with raw silk top"
-              }
-            ],
-            [
+              },
+           
               {
                 "name": "Image 1",
                 "path": "assets/images/gallery-7-min.jpg",
@@ -80,7 +77,6 @@
                 "text": "Lehanga",
                 "description": "A soft silk lehanga with complete ethnic touch"
               }
-            ]
           ]
     },
     "footer":{
@@ -97,7 +93,7 @@
             "headingText":"Information",
             "links":[
                 {"text":"Home","link":"home"},
-                {"text":"About","link":"about"},
+                {"text":"About","link":"about-us"},
                 {"text":"Portfolio","link":"portfolio"},
                 {"text":"Connect","link":"connect"}
             ]
