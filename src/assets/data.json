@@ -92,7 +92,7 @@
         "column2":{
             "headingText":"Information",
             "links":[
-                {"text":"Home","link":"home"},
+                {"text":"Home","link":""},
                 {"text":"About","link":"about-us"},
                 {"text":"Portfolio","link":"portfolio"},
                 {"text":"Connect","link":"connect"}

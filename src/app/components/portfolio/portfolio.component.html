@@ -1,1 +1,15 @@
-<ks-modal-gallery [modalImages]="images" [plainGalleryConfig]="plainGalleryGrid"></ks-modal-gallery>
+<div class="my-app-custom-plain-container-with-desc col-sm-12">
+    <ng-container *ngFor="let img of images; index as i">
+      <div class="clearfix" *ngIf="i==4"></div>
+      <div class="col-sm-3">
+      <figure class="my-app-custom-image-with-desc ">
+        <img [src]="img.modal.img"
+             (click)="openImageModalRowDescription(img)"/>
+        <figcaption class="description">{{img.modal.description ? img.modal.description : 'No description available'}}
+        </figcaption>
+      </figure>
+    </div>
+    </ng-container>
+  </div>
+  <ks-modal-gallery [modalImages]="images"
+                    [plainGalleryConfig]="customPlainGalleryRowDescConfig"></ks-modal-gallery>
